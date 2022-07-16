@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+:root{
+    --cl-bo: hsl(31, 77%, 52%);
+    --cl-dc: hsl(184, 100%, 22%);
+    --cl-vdc: hsl(179, 100%, 13%);
+    --cl-tp-w: hsla(0, 0%, 100%, 0.75);
+    --cl-vlg: hsl(0, 0%, 95%);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main{
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    width: 900px;
+    height: 600px;
+}
+.container{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.container > h1{
+    color: var(--cl-vlg);
+    font-family: 'Big Shoulders Display', cursive;
+}
+.container > p{
+    color: var(--cl-tp-w);
+    width: 85%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+img{
+    width: 70px;
+}
+.sedan-section{
+    background-color: var(--cl-bo);
+}
+.sedan-section button{
+    color: var(--cl-bo);
+}
+.suv-section{
+    background-color: var(--cl-dc);
+}
+.suv-section button{
+    color: var(--cl-dc);
+}
+.luxuary-section{
+    background-color: var(--cl-vdc);
+}
+.luxuary-section button{
+    color: var(--cl-vdc);
+}
+.button-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+button{
+    width: 130px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+@media (max-width:375px){
+    main{
+        flex-direction: column;
+        height: fit-content;
+    }
+    h1{
+        margin-bottom:0;
+    }
+}
